@@ -28,5 +28,5 @@ This project is also useful for web pentesters, bug bounty hunters. As you build
   - All signup users have User role by default. Admin user cannot be signed-up, we will hard-code him into our "passwd" file.
   - store user's username & password in a plain text file, similar to the /etc/passwd file. Don't use any SQL databases.
   - after user login, gives him an access token (how you generate this access token is up to you), user will send this access token along in every of his request. So that server can identify this user. 
-  - If user has User role, when calls localhost:8080/admin, he will get 403 HTTP code and the response <h1>unauthorized</h1>
+  - If user has User role, when calls localhost:8080/admin, he will get 403 HTTP code and the response `<h1>unauthorized</h1>`
   - if user has Admin role, when calls localhost:8080/admin, he is responded with Admin page, this page lists title of all articles, and a "Delete" button next to each title, for admin to delete this article.
